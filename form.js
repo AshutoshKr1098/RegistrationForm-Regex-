@@ -1,7 +1,7 @@
 //step-1 Create all regular expressions and store them in an object. 
 
 const regexPattern= {
-    username: /^[a-zA-Z_][\d\w_]{5,}$/,
+    username: /^[a-zA-Z_][\d\w_]{5,12}$/,
     phone: /^91-[987][0-9]{9}$/,
     password: /^[\w@#-$&]{10,15}$/,
     email:/^[a-zA-Z_]([\w\.])+@[a-zA-Z-]+\.([a-zA-Z]{3,8})(\.[a-zA-Z]{3,8})?$/   //me@mydomain.com.org
@@ -24,8 +24,9 @@ inputs.forEach(input=>{
         // console.log(text);
         // console.log(e.target.attributes.name)
         if(validate(regexPattern[e.target.attributes.name.value],text))
-            console.log(true);
+            input.className='valid';
         else 
-            console.log(false);
+            input.className='invalid';
+            
     })
 })

@@ -53,3 +53,25 @@ button{
 }
 
 /** Validation Styles **/
+
+.valid{
+    border-color:green;    
+    background-color: rgb(176, 201, 139);
+    color:white;
+}
+.invalid{
+    border-color: orangered; 
+    background-color: rgb(231, 130, 94);   
+    color:white;
+}
+input.invalid + p{
+    background-color: rgb(233, 159, 99);
+    color:white;
+    visibility: visible;
+    padding: 5px;
+    height: 28px;
+    width:380px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: small;
+}
