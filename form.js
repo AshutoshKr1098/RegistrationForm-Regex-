@@ -14,3 +14,18 @@ function validate(pattern,text){
 }
 
 // console.log(validate(regexPattern.password,'p@$$w0rd_123'))
+
+//Step-3 Attach event handlers to input field and test the value it with pattern
+
+var inputs= document.querySelectorAll('input');
+inputs.forEach(input=>{
+    input.addEventListener('keyup',(e)=>{
+        let text= input.value;
+        // console.log(text);
+        // console.log(e.target.attributes.name)
+        if(validate(regexPattern[e.target.attributes.name.value],text))
+            console.log(true);
+        else 
+            console.log(false);
+    })
+})
