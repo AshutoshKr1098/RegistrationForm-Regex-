@@ -1,0 +1,19 @@
+/*Initial Setup*/
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ddd;
+}
+.container{
+    background-color: white;
+    margin: 30px auto;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+}
+
+/*Branching begins now*/
