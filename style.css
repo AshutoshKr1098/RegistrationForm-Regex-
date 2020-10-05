@@ -18,6 +18,25 @@ body{
 input{
     display: block;
     margin:10px;
+    border: 2px solid rgb(1, 32, 13);
+    height:40px;
+    border-radius: 20px;
+    background-color: lawngreen;
+    color:black;
+    font-size: medium;
+    padding: 0px 20px;    
 }
-
+button{
+    background-color: crimson;
+    height:40px;
+    width: 120px;
+    border: 3px solid palevioletred;
+    color: wheat;
+    border-radius: 10px;
+}
+form{
+    background-color: thistle;
+    padding: 20px;
+    margin-top: 20px;
+}
 /*Branching begins now*/
